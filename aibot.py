@@ -10,7 +10,7 @@ URL = "https://random-stuff-api.p.rapidapi.com/ai" #Url of the API
 async def on_message(message): #Bot receives the message.
 	if message.author.bot: #Checks if the message is sent by a bot user. If it is then it will ignore it. 
 		return
-	if message.channel.id != "Your channel ID": #Checks if the message is sent in this channel. Use this to avoid spam in all channels. #You can integrate your bot to a database and check if the message is in a channel which is in database. (Use that if you are making a public BOT)
+	if message.channel.id != 1232323234: #Use this in a INTEGER FORMAT Checks if the message is sent in this channel. Use this to avoid spam in all channels. #You can integrate your bot to a database and check if the message is in a channel which is in database. (Use that if you are making a public BOT)
 		return
 	try: #Try to do this
 		datavar = {'msg':message.content}#--> Required ;You can add all the other non-important stuff as well...i.e Optional
