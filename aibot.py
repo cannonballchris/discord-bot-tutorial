@@ -2,7 +2,8 @@ import discord #Importing the DISCORD MODULE  #`pip install py-cord`
 from discord.ext import commands #Importing the Commands section from the discord module.
 import aiohttp #Built in AIOHTTP MODULE 
 
-bot = commands.Bot(command_prefix="!") #Put all your other setup stuff here.
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix="!", intents = intents) #Put all your other setup stuff here.
 API_KEY = "YOUR API KEY HERE" #Defining the API KEY 
 headervar = {"authorization": API_KEY, "x-rapidapi-host": "random-stuff-api.p.rapidapi.com", "x-rapidapi-key": "THE API KEY FOUND IN THE WEBSITE FOR RAPID API"}#This is the header. Which will be sent to verify your application's authenticity.
 URL = "https://random-stuff-api.p.rapidapi.com/ai" #Url of the API 
