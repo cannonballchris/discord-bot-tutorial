@@ -1,7 +1,7 @@
-import discord #Importing the DISCORD MODULE  #`pip install py-cord`
+import discord #Importing the DISCORD MODULE  #`pip install py-cord`/ `pip install discord.py`
 from discord.ext import commands #Importing the Commands section from the discord module.
 import aiohttp #Built in AIOHTTP MODULE 
-
+#GET YOUR API KEY FROM: https://rsa-api.xyz/
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents = intents) #Put all your other setup stuff here.
 API_KEY = "YOUR API KEY HERE" #Defining the API KEY 
