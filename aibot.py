@@ -19,7 +19,7 @@ async def on_message(message): #Bot receives the message.
 		async with aiohttp.ClientSession(headers = headervar) as session: #This will send a request with the headers to the API
 			async with session.get(url=URL, params = datavar) as reply: #This will receive an output and store it in "reply" var.
 				output = await reply.json() #Converting the reply into python readable JSON Format
-				msg = output["AIResponse"] #Getting the Response Out of it 
+				msg = output["message"] #Getting the Response Out of it 
 				await message.reply(msg) #Sending the response to the user as a reply to the person who sent the message.
 	except: #If it fails, Then do this
 		await message.reply("An erorr occured. Kindly contact an Admin") #If any error occurs (API not working or response time out, it will send this as the alternate reply.You can make it so that , create some error handler here.)
